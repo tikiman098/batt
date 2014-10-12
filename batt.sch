@@ -1,0 +1,308 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bike_light
+LIBS:batt
+EELAYER 27 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Battery Board"
+Date "12 oct 2014"
+Rev "alpha"
+Comp "APS"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DIODESCH D?
+U 1 1 54398109
+P 1950 2500
+F 0 "D?" H 1950 2600 40  0000 C CNN
+F 1 "DIODESCH" H 1950 2400 40  0000 C CNN
+F 2 "~" H 1950 2500 60  0000 C CNN
+F 3 "~" H 1950 2500 60  0000 C CNN
+	1    1950 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CSMALL C?
+U 1 1 5439813B
+P 1250 3200
+F 0 "C?" H 1275 3250 30  0000 L CNN
+F 1 "10uF (0.3 ESR MAX)" H 1275 3150 30  0000 L CNN
+F 2 "~" H 1250 3200 60  0000 C CNN
+F 3 "~" H 1250 3200 60  0000 C CNN
+	1    1250 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L BATTERY BT?
+U 1 1 5439816E
+P 8850 3050
+F 0 "BT?" H 8850 3250 50  0000 C CNN
+F 1 "BATTERY" H 8850 2860 50  0000 C CNN
+F 2 "~" H 8850 3050 60  0000 C CNN
+F 3 "~" H 8850 3050 60  0000 C CNN
+	1    8850 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L MOSFET_P Q?
+U 1 1 5439FF6C
+P 8750 2450
+F 0 "Q?" H 8750 2640 60  0000 R CNN
+F 1 "MOSFET_P" H 9350 2450 60  0000 R CNN
+F 2 "~" H 8750 2450 60  0000 C CNN
+F 3 "~" H 8750 2450 60  0000 C CNN
+	1    8750 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L TOUCHPAD U?
+U 1 1 543A006B
+P 8850 3750
+F 0 "U?" V 8950 3750 60  0000 C CNN
+F 1 "AAA-" V 8850 3750 60  0000 C CNN
+F 2 "~" H 8850 3750 60  0000 C CNN
+F 3 "~" H 8850 3750 60  0000 C CNN
+	1    8850 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 543A0134
+P 8450 2800
+F 0 "R?" V 8530 2800 40  0000 C CNN
+F 1 "R" V 8457 2801 40  0000 C CNN
+F 2 "~" V 8380 2800 30  0000 C CNN
+F 3 "~" H 8450 2800 30  0000 C CNN
+	1    8450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L TOUCHPAD U?
+U 1 1 543A0166
+P 8850 1850
+F 0 "U?" V 8950 1850 60  0000 C CNN
+F 1 "AAA+" V 8850 1850 60  0000 C CNN
+F 2 "~" H 8850 1850 60  0000 C CNN
+F 3 "~" H 8850 1850 60  0000 C CNN
+	1    8850 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 3350 8850 3450
+Wire Wire Line
+	8850 2650 8850 2750
+Wire Wire Line
+	8850 2250 8850 2150
+$Comp
+L LM2767 U?
+U 1 1 543A0435
+P 1950 2800
+F 0 "U?" H 1950 2400 60  0000 C CNN
+F 1 "LM2767" H 1950 2100 60  0000 C CNN
+F 2 "" H 1950 2800 60  0000 C CNN
+F 3 "" H 1950 2800 60  0000 C CNN
+	1    1950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CSMALL C?
+U 1 1 543A0467
+P 2550 3100
+F 0 "C?" H 2575 3150 30  0000 L CNN
+F 1 "10uF (0.3 ESR MAX)" H 2575 3050 30  0000 L CNN
+F 2 "~" H 2550 3100 60  0000 C CNN
+F 3 "~" H 2550 3100 60  0000 C CNN
+	1    2550 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2700 9000 2700
+Connection ~ 8850 2700
+Wire Wire Line
+	1350 3000 1250 3000
+Wire Wire Line
+	1250 3000 1250 3100
+Wire Wire Line
+	1250 3300 1250 3400
+Wire Wire Line
+	1250 3400 1350 3400
+Wire Wire Line
+	2550 3400 8850 3400
+Connection ~ 8850 3400
+Text Label 9000 2700 0    60   ~ 0
+V_BATT
+Text Label 1250 2900 2    60   ~ 0
+V_BATT
+Wire Wire Line
+	1350 2900 1250 2900
+Wire Wire Line
+	1350 2900 1350 2500
+Wire Wire Line
+	1350 2500 1750 2500
+Wire Wire Line
+	2150 2500 2550 2500
+Wire Wire Line
+	2550 2500 2550 3000
+Connection ~ 2550 2900
+Wire Wire Line
+	2550 3200 2550 3400
+Wire Wire Line
+	2550 2900 3250 2900
+Text Label 2650 2900 0    60   ~ 0
+2xV_BATT
+Text Notes 9200 3100 0    60   ~ 0
+0.9V <-> 1.5V
+Wire Wire Line
+	8450 2550 8450 2450
+Wire Wire Line
+	8350 2450 8550 2450
+Wire Wire Line
+	8450 3050 8450 3450
+Connection ~ 8450 3400
+Connection ~ 8450 2450
+$Comp
+L MMA8653FC U?
+U 1 1 543A0D7F
+P 4600 2450
+F 0 "U?" H 4600 2450 60  0000 C CNN
+F 1 "MMA8653FC" H 4600 1650 60  0000 C CNN
+F 2 "" H 4600 2450 60  0000 C CNN
+F 3 "" H 4600 2450 60  0000 C CNN
+	1    4600 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2900 4000 3400
+Connection ~ 4000 3000
+Connection ~ 4000 3400
+Connection ~ 4000 3100
+Wire Wire Line
+	3250 2900 3250 2600
+Wire Wire Line
+	3250 2600 4000 2600
+Wire Wire Line
+	4000 2000 4000 2700
+$Comp
+L CSMALL C?
+U 1 1 543A0E56
+P 3850 2900
+F 0 "C?" H 3875 2950 30  0000 L CNN
+F 1 "0.1uF" H 3875 2850 30  0000 L CNN
+F 2 "~" H 3850 2900 60  0000 C CNN
+F 3 "~" H 3850 2900 60  0000 C CNN
+	1    3850 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2800 4000 2800
+Wire Wire Line
+	3850 3000 3850 3400
+Connection ~ 3850 3400
+$Comp
+L GND #PWR?
+U 1 1 543A0EEF
+P 8450 3450
+F 0 "#PWR?" H 8450 3450 30  0001 C CNN
+F 1 "GND" H 8450 3380 30  0001 C CNN
+F 2 "" H 8450 3450 60  0000 C CNN
+F 3 "" H 8450 3450 60  0000 C CNN
+	1    8450 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR?
+U 1 1 543A0EFE
+P 3250 2600
+F 0 "#PWR?" H 3250 2700 30  0001 C CNN
+F 1 "VDD" H 3250 2710 30  0000 C CNN
+F 2 "" H 3250 2600 60  0000 C CNN
+F 3 "" H 3250 2600 60  0000 C CNN
+	1    3250 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 2600
+$Comp
+L R R?
+U 1 1 543A0F81
+P 5350 2250
+F 0 "R?" V 5430 2250 40  0000 C CNN
+F 1 "1K" V 5357 2251 40  0000 C CNN
+F 2 "~" V 5280 2250 30  0000 C CNN
+F 3 "~" H 5350 2250 30  0000 C CNN
+	1    5350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 543A0F87
+P 5200 2250
+F 0 "R?" V 5280 2250 40  0000 C CNN
+F 1 "1K" V 5207 2251 40  0000 C CNN
+F 2 "~" V 5130 2250 30  0000 C CNN
+F 3 "~" H 5200 2250 30  0000 C CNN
+	1    5200 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2600 5200 2500
+Wire Wire Line
+	5200 2700 5450 2700
+Wire Wire Line
+	5350 2700 5350 2500
+Wire Wire Line
+	5200 2600 5450 2600
+Connection ~ 5350 2700
+Text Label 5450 2600 0    60   ~ 0
+SDA
+Text Label 5450 2700 0    60   ~ 0
+SCL
+Wire Wire Line
+	4000 2000 5700 2000
+Connection ~ 5200 2000
+Text Label 4450 2000 0    60   ~ 0
+2xV_BATT
+Wire Wire Line
+	5200 2850 5450 2850
+Wire Wire Line
+	5200 2950 5450 2950
+Text Label 5450 2850 0    60   ~ 0
+INT1
+Text Label 5450 2950 0    60   ~ 0
+INT2
+Connection ~ 5350 2000
+$EndSCHEMATC
