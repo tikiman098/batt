@@ -1,4 +1,10 @@
-EESchema-DOCLIB  Version 2.0  Date: 10/12/2014 12:25:31 AM
+EESchema-DOCLIB  Version 2.0  Date: 10/12/2014 10:57:33 PM
+#
+$CMP C8051T606
+D Mixed-Signal Byte-Programmable EPROM MCU
+K proc
+F https://www.silabs.com/Support%20Documents/TechnicalDocs/C8051T60x.pdf
+$ENDCMP
 #
 $CMP LM2767
 D Switched Capacitor Voltage Converter (Doubler)

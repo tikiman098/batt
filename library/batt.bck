@@ -1,4 +1,10 @@
-EESchema-DOCLIB  Version 2.0  Date: 10/12/2014 12:24:26 AM
+EESchema-DOCLIB  Version 2.0  Date: 10/12/2014 10:56:38 PM
+#
+$CMP LM2767
+D Switched Capacitor Voltage Converter (Doubler)
+K PMIC
+F http://www.ti.com/lit/ds/symlink/lm2767.pdf
+$ENDCMP
 #
 $CMP MMA8653FC
 D Xtrinsic MMA8653FC 3-Axis, 10-bit Digital Accelerometer

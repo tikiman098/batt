@@ -31,14 +31,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:bike_light
 LIBS:batt
-LIBS:batt-cache
 EELAYER 27 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Battery Board"
-Date "13 oct 2014"
+Date "12 oct 2014"
 Rev "alpha"
 Comp "APS"
 Comment1 ""
@@ -293,7 +292,7 @@ SDA
 Text Label 5450 2700 0    60   ~ 0
 SCL
 Wire Wire Line
-	4000 2000 6200 2000
+	4000 2000 5700 2000
 Connection ~ 5200 2000
 Text Label 4450 2000 0    60   ~ 0
 2xV_BATT
@@ -306,24 +305,4 @@ INT1
 Text Label 5450 2950 0    60   ~ 0
 INT2
 Connection ~ 5350 2000
-Text Notes 8300 2350 0    60   ~ 0
-3V\n
-Text Notes 8250 2550 0    60   ~ 0
-0V
-$Comp
-L C8051T606 U?
-U 1 1 543B509D
-P 7000 2450
-F 0 "U?" H 7000 2450 60  0000 C CNN
-F 1 "C8051T606" H 7000 1650 60  0000 C CNN
-F 2 "" H 7000 2450 60  0000 C CNN
-F 3 "" H 7000 2450 60  0000 C CNN
-	1    7000 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 3100 6200 3400
-Connection ~ 6200 3400
-Wire Wire Line
-	6200 2000 6200 2600
 $EndSCHEMATC
