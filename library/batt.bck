@@ -1,4 +1,14 @@
-EESchema-DOCLIB  Version 2.0  Date: 10/12/2014 10:56:38 PM
+EESchema-DOCLIB  Version 2.0  Date: 10/13/2014 9:35:04 PM
+#
+$CMP AON2400
+F transistors/mos/*.*
+$ENDCMP
+#
+$CMP C8051T606
+D Mixed-Signal Byte-Programmable EPROM MCU
+K proc
+F https://www.silabs.com/Support%20Documents/TechnicalDocs/C8051T60x.pdf
+$ENDCMP
 #
 $CMP LM2767
 D Switched Capacitor Voltage Converter (Doubler)
@@ -10,6 +20,12 @@ $CMP MMA8653FC
 D Xtrinsic MMA8653FC 3-Axis, 10-bit Digital Accelerometer
 K IMU
 F http://cache.freescale.com/files/sensors/doc/data_sheet/MMA8653FC.pdf
+$ENDCMP
+#
+$CMP MOSFET_N
+D 8V N-Channel MOSFET
+K mosfet fet transistor
+F http://aosmd.com/res/data_sheets/AON2400.pdf
 $ENDCMP
 #
 #End Doc Library

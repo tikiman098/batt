@@ -1,4 +1,8 @@
-EESchema-DOCLIB  Version 2.0  Date: 10/12/2014 10:57:33 PM
+EESchema-DOCLIB  Version 2.0  Date: 10/13/2014 9:36:35 PM
+#
+$CMP AON2400
+F transistors/mos/*.*
+$ENDCMP
 #
 $CMP C8051T606
 D Mixed-Signal Byte-Programmable EPROM MCU
