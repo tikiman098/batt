@@ -36,9 +36,9 @@ EELAYER 27 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 3
+Sheet 1 5
 Title "Battery Board"
-Date "14 oct 2014"
+Date "15 oct 2014"
 Rev "alpha"
 Comp "APS"
 Comment1 ""
@@ -46,615 +46,90 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L DIODESCH D?
-U 1 1 54398109
-P 1950 2500
-F 0 "D?" H 1950 2600 40  0000 C CNN
-F 1 "DIODESCH" H 1950 2400 40  0000 C CNN
-F 2 "~" H 1950 2500 60  0000 C CNN
-F 3 "~" H 1950 2500 60  0000 C CNN
-	1    1950 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L CSMALL C?
-U 1 1 5439813B
-P 1250 3200
-F 0 "C?" H 1275 3250 30  0000 L CNN
-F 1 "10uF (0.3 ESR MAX)" H 1275 3150 30  0000 L CNN
-F 2 "~" H 1250 3200 60  0000 C CNN
-F 3 "~" H 1250 3200 60  0000 C CNN
-	1    1250 3200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L BATTERY BT?
-U 1 1 5439816E
-P 8850 2550
-F 0 "BT?" H 8850 2750 50  0000 C CNN
-F 1 "BATTERY" H 8850 2360 50  0000 C CNN
-F 2 "~" H 8850 2550 60  0000 C CNN
-F 3 "~" H 8850 2550 60  0000 C CNN
-	1    8850 2550
-	0    1    1    0   
-$EndComp
-$Comp
-L TOUCHPAD U?
-U 1 1 543A006B
-P 8850 3750
-F 0 "U?" V 8950 3750 60  0000 C CNN
-F 1 "AAA-" V 8850 3750 60  0000 C CNN
-F 2 "~" H 8850 3750 60  0000 C CNN
-F 3 "~" H 8850 3750 60  0000 C CNN
-	1    8850 3750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R?
-U 1 1 543A0134
-P 8450 2250
-F 0 "R?" V 8530 2250 40  0000 C CNN
-F 1 "R" V 8457 2251 40  0000 C CNN
-F 2 "~" V 8380 2250 30  0000 C CNN
-F 3 "~" H 8450 2250 30  0000 C CNN
-	1    8450 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L TOUCHPAD U?
-U 1 1 543A0166
-P 8850 1850
-F 0 "U?" V 8950 1850 60  0000 C CNN
-F 1 "AAA+" V 8850 1850 60  0000 C CNN
-F 2 "~" H 8850 1850 60  0000 C CNN
-F 3 "~" H 8850 1850 60  0000 C CNN
-	1    8850 1850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8850 3350 8850 3450
-Wire Wire Line
-	8850 2150 8850 2250
-$Comp
-L LM2767 U?
-U 1 1 543A0435
-P 1950 2800
-F 0 "U?" H 1950 2400 60  0000 C CNN
-F 1 "LM2767" H 1950 2100 60  0000 C CNN
-F 2 "" H 1950 2800 60  0000 C CNN
-F 3 "" H 1950 2800 60  0000 C CNN
-	1    1950 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L CSMALL C?
-U 1 1 543A0467
-P 2550 3100
-F 0 "C?" H 2575 3150 30  0000 L CNN
-F 1 "10uF (0.3 ESR MAX)" H 2575 3050 30  0000 L CNN
-F 2 "~" H 2550 3100 60  0000 C CNN
-F 3 "~" H 2550 3100 60  0000 C CNN
-	1    2550 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 3000 1250 3000
-Wire Wire Line
-	1250 3000 1250 3100
-Wire Wire Line
-	1250 3300 1250 3400
-Wire Wire Line
-	1250 3400 1350 3400
-Wire Wire Line
-	2550 3400 8850 3400
-Connection ~ 8850 3400
-Text Label 9050 2200 0    60   ~ 0
-V_BATT
-Text Label 1250 2900 2    60   ~ 0
-V_BATT
-Wire Wire Line
-	1350 2900 1250 2900
-Wire Wire Line
-	1350 2900 1350 2500
-Wire Wire Line
-	1350 2500 1750 2500
-Wire Wire Line
-	2150 2500 2550 2500
-Wire Wire Line
-	2550 2500 2550 3000
-Connection ~ 2550 2900
-Wire Wire Line
-	2550 3200 2550 3400
-Wire Wire Line
-	2550 2900 3250 2900
-Text Label 2650 2900 0    60   ~ 0
-2xV_BATT
-Text Notes 9150 2600 0    60   ~ 0
-0.9V <-> 1.5V
-$Comp
-L MMA8653FC U?
-U 1 1 543A0D7F
-P 4600 2450
-F 0 "U?" H 4600 2450 60  0000 C CNN
-F 1 "MMA8653FC" H 4600 1650 60  0000 C CNN
-F 2 "" H 4600 2450 60  0000 C CNN
-F 3 "" H 4600 2450 60  0000 C CNN
-	1    4600 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 2900 4000 3400
-Connection ~ 4000 3000
-Connection ~ 4000 3400
-Connection ~ 4000 3100
-Wire Wire Line
-	3250 2900 3250 2600
-Wire Wire Line
-	3250 2600 4000 2600
-Wire Wire Line
-	4000 2000 4000 2700
-$Comp
-L CSMALL C?
-U 1 1 543A0E56
-P 3850 2900
-F 0 "C?" H 3875 2950 30  0000 L CNN
-F 1 "0.1uF" H 3875 2850 30  0000 L CNN
-F 2 "~" H 3850 2900 60  0000 C CNN
-F 3 "~" H 3850 2900 60  0000 C CNN
-	1    3850 2900
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 2800 4000 2800
-Wire Wire Line
-	3850 3000 3850 3400
-Connection ~ 3850 3400
-Connection ~ 4000 2600
-$Comp
-L R R?
-U 1 1 543A0F81
-P 5350 2250
-F 0 "R?" V 5430 2250 40  0000 C CNN
-F 1 "1K" V 5357 2251 40  0000 C CNN
-F 2 "~" V 5280 2250 30  0000 C CNN
-F 3 "~" H 5350 2250 30  0000 C CNN
-	1    5350 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 543A0F87
-P 5200 2250
-F 0 "R?" V 5280 2250 40  0000 C CNN
-F 1 "1K" V 5207 2251 40  0000 C CNN
-F 2 "~" V 5130 2250 30  0000 C CNN
-F 3 "~" H 5200 2250 30  0000 C CNN
-	1    5200 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 2600 5200 2500
-Wire Wire Line
-	5200 2700 5450 2700
-Wire Wire Line
-	5350 2700 5350 2500
-Wire Wire Line
-	5200 2600 5450 2600
-Connection ~ 5350 2700
-Text Label 5450 2600 0    60   ~ 0
-SDA
-Text Label 5450 2700 0    60   ~ 0
-SCL
-Wire Wire Line
-	4000 2000 8450 2000
-Connection ~ 5200 2000
-Text Label 4450 2000 0    60   ~ 0
-2xV_BATT
-Wire Wire Line
-	5200 2850 5450 2850
-Wire Wire Line
-	5200 2950 5450 2950
-Text Label 5450 2850 0    60   ~ 0
-INT1
-Text Label 5450 2950 0    60   ~ 0
-INT2
-Connection ~ 5350 2000
-Text Notes 6100 1950 0    60   ~ 0
-3V (or if doubler fails, V_BATT - V_DIODE)\n
-Text Notes 8150 3500 0    60   ~ 0
-LOCAL GND
-$Comp
-L C8051T606 U?
-U 1 1 543B509D
-P 7000 2450
-F 0 "U?" H 7000 2450 60  0000 C CNN
-F 1 "C8051T606" H 7000 1650 60  0000 C CNN
-F 2 "" H 7000 2450 60  0000 C CNN
-F 3 "" H 7000 2450 60  0000 C CNN
-	1    7000 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 3100 6200 3400
-Connection ~ 6200 3400
-Wire Wire Line
-	6200 2000 6200 2600
-$Comp
-L AON2400 Q?
-U 1 1 543C8D9A
-P 8750 3150
-F 0 "Q?" H 8760 3320 60  0000 R CNN
-F 1 "AON2400" V 8950 3350 60  0000 R CNN
-F 2 "~" H 8750 3150 60  0000 C CNN
-F 3 "~" H 8750 3150 60  0000 C CNN
-	1    8750 3150
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	8850 2850 8850 2950
-Wire Wire Line
-	8850 2200 9050 2200
-Connection ~ 8850 2200
-Connection ~ 6200 2000
-Text Notes 7800 2500 0    60   ~ 0
-Push-pull
-Wire Wire Line
-	7800 2600 8450 2600
-Wire Wire Line
-	8450 2500 8450 3150
-Wire Wire Line
-	7800 2700 8050 2700
-Wire Wire Line
-	7800 2800 8050 2800
-Text Label 8050 2700 0    60   ~ 0
-INT1
-Text Label 8050 2800 0    60   ~ 0
-INT2
-Wire Wire Line
-	8450 3150 8550 3150
-Connection ~ 8450 2600
-Text Notes 5800 2850 0    60   ~ 0
-weak pull-up
-Text Notes 6050 2750 0    60   ~ 0
-input
-Text Notes 7800 2700 0    60   ~ 0
-input
-Text Notes 7750 3300 0    60   ~ 0
-weak pull-up
-Wire Notes Line
-	8300 2700 8350 2700
-Wire Notes Line
-	8350 2700 8350 2800
-Wire Notes Line
-	8350 2800 8300 2800
-Wire Notes Line
-	8350 2750 8400 2750
-Wire Notes Line
-	8400 2750 8400 3250
-Text Notes 7800 2800 0    60   ~ 0
-input
-Text Notes 7800 2600 0    60   ~ 0
-output
-NoConn ~ 7800 2900
-NoConn ~ 7800 3000
-NoConn ~ 7800 3100
-NoConn ~ 6200 2950
-$Comp
-L DIODESCH D?
-U 1 1 543CA4CA
-P 1950 5500
-F 0 "D?" H 1950 5600 40  0000 C CNN
-F 1 "DIODESCH" H 1950 5400 40  0000 C CNN
-F 2 "~" H 1950 5500 60  0000 C CNN
-F 3 "~" H 1950 5500 60  0000 C CNN
-	1    1950 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L CSMALL C?
-U 1 1 543CA4D0
-P 1250 6200
-F 0 "C?" H 1275 6250 30  0000 L CNN
-F 1 "10uF (0.3 ESR MAX)" H 1275 6150 30  0000 L CNN
-F 2 "~" H 1250 6200 60  0000 C CNN
-F 3 "~" H 1250 6200 60  0000 C CNN
-	1    1250 6200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L BATTERY BT?
-U 1 1 543CA4D6
-P 8850 5550
-F 0 "BT?" H 8850 5750 50  0000 C CNN
-F 1 "BATTERY" H 8850 5360 50  0000 C CNN
-F 2 "~" H 8850 5550 60  0000 C CNN
-F 3 "~" H 8850 5550 60  0000 C CNN
-	1    8850 5550
-	0    1    1    0   
-$EndComp
-$Comp
-L TOUCHPAD U?
-U 1 1 543CA4DC
-P 8850 6750
-F 0 "U?" V 8950 6750 60  0000 C CNN
-F 1 "AAA-" V 8850 6750 60  0000 C CNN
-F 2 "~" H 8850 6750 60  0000 C CNN
-F 3 "~" H 8850 6750 60  0000 C CNN
-	1    8850 6750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R?
-U 1 1 543CA4E2
-P 8450 5250
-F 0 "R?" V 8530 5250 40  0000 C CNN
-F 1 "R" V 8457 5251 40  0000 C CNN
-F 2 "~" V 8380 5250 30  0000 C CNN
-F 3 "~" H 8450 5250 30  0000 C CNN
-	1    8450 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L TOUCHPAD U?
-U 1 1 543CA4E8
-P 8850 4850
-F 0 "U?" V 8950 4850 60  0000 C CNN
-F 1 "AAA+" V 8850 4850 60  0000 C CNN
-F 2 "~" H 8850 4850 60  0000 C CNN
-F 3 "~" H 8850 4850 60  0000 C CNN
-	1    8850 4850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8850 6350 8850 6450
-Wire Wire Line
-	8850 5150 8850 5250
-$Comp
-L LM2767 U?
-U 1 1 543CA4F0
-P 1950 5800
-F 0 "U?" H 1950 5400 60  0000 C CNN
-F 1 "LM2767" H 1950 5100 60  0000 C CNN
-F 2 "" H 1950 5800 60  0000 C CNN
-F 3 "" H 1950 5800 60  0000 C CNN
-	1    1950 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L CSMALL C?
-U 1 1 543CA4F6
-P 2550 6100
-F 0 "C?" H 2575 6150 30  0000 L CNN
-F 1 "10uF (0.3 ESR MAX)" H 2575 6050 30  0000 L CNN
-F 2 "~" H 2550 6100 60  0000 C CNN
-F 3 "~" H 2550 6100 60  0000 C CNN
-	1    2550 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 6000 1250 6000
-Wire Wire Line
-	1250 6000 1250 6100
-Wire Wire Line
-	1250 6300 1250 6400
-Wire Wire Line
-	1250 6400 1350 6400
-Wire Wire Line
-	2550 6400 8850 6400
-Connection ~ 8850 6400
-Text Label 9050 5200 0    60   ~ 0
-V_BATT
-Text Label 1250 5900 2    60   ~ 0
-V_BATT
-Wire Wire Line
-	1350 5900 1250 5900
-Wire Wire Line
-	1350 5900 1350 5500
-Wire Wire Line
-	1350 5500 1750 5500
-Wire Wire Line
-	2150 5500 2550 5500
-Wire Wire Line
-	2550 5500 2550 6000
-Connection ~ 2550 5900
-Wire Wire Line
-	2550 6200 2550 6400
-Wire Wire Line
-	2550 5900 3250 5900
-Text Label 2650 5900 0    60   ~ 0
-2xV_BATT
-Text Notes 9150 5600 0    60   ~ 0
-0.9V <-> 1.5V
-$Comp
-L MMA8653FC U?
-U 1 1 543CA50E
-P 4600 5450
-F 0 "U?" H 4600 5450 60  0000 C CNN
-F 1 "MMA8653FC" H 4600 4650 60  0000 C CNN
-F 2 "" H 4600 5450 60  0000 C CNN
-F 3 "" H 4600 5450 60  0000 C CNN
-	1    4600 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 5900 4000 6400
-Connection ~ 4000 6000
-Connection ~ 4000 6400
-Connection ~ 4000 6100
-Wire Wire Line
-	3250 5900 3250 5600
-Wire Wire Line
-	3250 5600 4000 5600
-Wire Wire Line
-	4000 5000 4000 5700
-$Comp
-L CSMALL C?
-U 1 1 543CA51B
-P 3850 5900
-F 0 "C?" H 3875 5950 30  0000 L CNN
-F 1 "0.1uF" H 3875 5850 30  0000 L CNN
-F 2 "~" H 3850 5900 60  0000 C CNN
-F 3 "~" H 3850 5900 60  0000 C CNN
-	1    3850 5900
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 5800 4000 5800
-Wire Wire Line
-	3850 6000 3850 6400
-Connection ~ 3850 6400
-Connection ~ 4000 5600
-$Comp
-L R R?
-U 1 1 543CA525
-P 5350 5250
-F 0 "R?" V 5430 5250 40  0000 C CNN
-F 1 "1K" V 5357 5251 40  0000 C CNN
-F 2 "~" V 5280 5250 30  0000 C CNN
-F 3 "~" H 5350 5250 30  0000 C CNN
-	1    5350 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 543CA52B
-P 5200 5250
-F 0 "R?" V 5280 5250 40  0000 C CNN
-F 1 "1K" V 5207 5251 40  0000 C CNN
-F 2 "~" V 5130 5250 30  0000 C CNN
-F 3 "~" H 5200 5250 30  0000 C CNN
-	1    5200 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 5600 5200 5500
-Wire Wire Line
-	5200 5700 5450 5700
-Wire Wire Line
-	5350 5700 5350 5500
-Wire Wire Line
-	5200 5600 5450 5600
-Connection ~ 5350 5700
-Text Label 5450 5600 0    60   ~ 0
-SDA
-Text Label 5450 5700 0    60   ~ 0
-SCL
-Wire Wire Line
-	4000 5000 8450 5000
-Connection ~ 5200 5000
-Text Label 4450 5000 0    60   ~ 0
-2xV_BATT
-Wire Wire Line
-	5200 5850 5450 5850
-Wire Wire Line
-	5200 5950 5450 5950
-Text Label 5450 5850 0    60   ~ 0
-INT1
-Text Label 5450 5950 0    60   ~ 0
-INT2
-Connection ~ 5350 5000
-Text Notes 6100 4950 0    60   ~ 0
-3V (or if doubler fails, V_BATT - V_DIODE)\n
-Text Notes 8150 6500 0    60   ~ 0
-LOCAL GND
-$Comp
-L C8051T606 U?
-U 1 1 543CA542
-P 7000 5450
-F 0 "U?" H 7000 5450 60  0000 C CNN
-F 1 "C8051T606" H 7000 4650 60  0000 C CNN
-F 2 "" H 7000 5450 60  0000 C CNN
-F 3 "" H 7000 5450 60  0000 C CNN
-	1    7000 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 6100 6200 6400
-Connection ~ 6200 6400
-Wire Wire Line
-	6200 5000 6200 5600
-$Comp
-L AON2400 Q?
-U 1 1 543CA54B
-P 8750 6150
-F 0 "Q?" H 8760 6320 60  0000 R CNN
-F 1 "AON2400" V 8950 6350 60  0000 R CNN
-F 2 "~" H 8750 6150 60  0000 C CNN
-F 3 "~" H 8750 6150 60  0000 C CNN
-	1    8750 6150
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	8850 5850 8850 5950
-Wire Wire Line
-	8850 5200 9050 5200
-Connection ~ 8850 5200
-Connection ~ 6200 5000
-Text Notes 7800 5500 0    60   ~ 0
-Push-pull
-Wire Wire Line
-	7800 5600 8450 5600
-Wire Wire Line
-	8450 5500 8450 6150
-Wire Wire Line
-	7800 5700 8050 5700
-Wire Wire Line
-	7800 5800 8050 5800
-Text Label 8050 5700 0    60   ~ 0
-INT1
-Text Label 8050 5800 0    60   ~ 0
-INT2
-Wire Wire Line
-	8450 6150 8550 6150
-Connection ~ 8450 5600
-Text Notes 5800 5850 0    60   ~ 0
-weak pull-up
-Text Notes 6050 5750 0    60   ~ 0
-input
-Text Notes 7800 5700 0    60   ~ 0
-input
-Text Notes 7750 6300 0    60   ~ 0
-weak pull-up
-Wire Notes Line
-	8300 5700 8350 5700
-Wire Notes Line
-	8350 5700 8350 5800
-Wire Notes Line
-	8350 5800 8300 5800
-Wire Notes Line
-	8350 5750 8400 5750
-Wire Notes Line
-	8400 5750 8400 6250
-Text Notes 7800 5800 0    60   ~ 0
-input
-Text Notes 7800 5600 0    60   ~ 0
-output
-NoConn ~ 7800 5900
-NoConn ~ 7800 6000
-NoConn ~ 7800 6100
-NoConn ~ 6200 5950
-Wire Notes Line
-	650  4250 10350 4250
-Text Notes 5350 4150 0    60   ~ 0
-Actual Implementation
-Text Notes 5350 4450 0    60   ~ 0
-Debug Implementation
 $Sheet
-S 6500 3500 850  400 
+S 6200 2250 850  1000
 U 543CA5E8
 F0 "proc_C8051T606" 50
 F1 "proc_C8051T606.sch" 50
-F2 "VDD" I L 6500 3600 60 
-F3 "GND" I L 6500 3800 60 
-F4 "FET_CTRL" O R 7350 3600 60 
-F5 "INT_1" I R 7350 3700 60 
-F6 "INT_2" I R 7350 3800 60 
+F2 "VDD" I L 6200 2350 60 
+F3 "GND" I L 6200 3150 60 
+F4 "FET_CTRL" O L 6200 2500 60 
+F5 "INT_1" I L 6200 2850 60 
+F6 "INT_2" I L 6200 2950 60 
+F7 "SDA" O L 6200 2600 60 
+F8 "SCL" O L 6200 2700 60 
 $EndSheet
 $Sheet
-S 9550 4600 950  650 
-U 543CA5EA
+S 4500 2250 850  1000
+U 543DFA14
+F0 "smart_battery_module_1" 50
+F1 "smart_battery_module.sch" 50
+F2 "VDD" O R 5350 2350 60 
+F3 "GND" O R 5350 3150 60 
+F4 "SDA" I R 5350 2600 60 
+F5 "SCL" I R 5350 2700 60 
+F6 "INT1" O R 5350 2850 60 
+F7 "INT2" O R 5350 2950 60 
+F8 "FET_CTRL" I R 5350 2500 60 
+$EndSheet
+$Sheet
+S 6200 3550 850  1000
+U 543E0141
 F0 "proc_MSP430G2203" 50
 F1 "proc_MSP430G2203.sch" 50
+F2 "VDD" I L 6200 3650 60 
+F3 "GND" I L 6200 4450 60 
+F4 "SDA" O L 6200 3900 60 
+F5 "SCL" O L 6200 4000 60 
+F6 "INT1" I L 6200 4150 60 
+F7 "INT2" I L 6200 4250 60 
+F8 "FET_CTRL" O L 6200 3800 60 
 $EndSheet
+$Sheet
+S 4500 3550 850  1000
+U 543E08FA
+F0 "smart_battery_module_2" 50
+F1 "smart_battery_module.sch" 50
+F2 "VDD" O R 5350 3650 60 
+F3 "GND" O R 5350 4450 60 
+F4 "SDA" I R 5350 3900 60 
+F5 "SCL" I R 5350 4000 60 
+F6 "INT1" O R 5350 4150 60 
+F7 "INT2" O R 5350 4250 60 
+F8 "FET_CTRL" I R 5350 3800 60 
+$EndSheet
+Wire Wire Line
+	5350 2350 6200 2350
+Wire Wire Line
+	6200 2500 5350 2500
+Wire Wire Line
+	5350 2600 6200 2600
+Wire Wire Line
+	6200 2700 5350 2700
+Wire Wire Line
+	5350 2850 6200 2850
+Wire Wire Line
+	6200 2950 5350 2950
+Wire Wire Line
+	5350 3150 6200 3150
+Wire Wire Line
+	6200 3650 5350 3650
+Wire Wire Line
+	5350 3800 6200 3800
+Wire Wire Line
+	6200 3900 5350 3900
+Wire Wire Line
+	5350 4000 6200 4000
+Wire Wire Line
+	6200 4150 5350 4150
+Wire Wire Line
+	5350 4250 6200 4250
+Wire Wire Line
+	6200 4450 5350 4450
+Text Notes 3800 3400 0    60   ~ 0
+Desired circuit
+Text Notes 3800 3500 0    60   ~ 0
+Debug Circuit
+Wire Notes Line
+	3800 3400 7050 3400
 $EndSCHEMATC

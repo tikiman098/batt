@@ -36,7 +36,7 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 4 4
 Title ""
 Date "15 oct 2014"
 Rev ""
@@ -46,43 +46,32 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4100 3100 0    60   Input ~ 0
+Text HLabel 1350 1200 0    60   Output ~ 0
 VDD
-Text HLabel 4100 4750 0    60   Input ~ 0
+Text HLabel 1350 1600 0    60   Output ~ 0
 GND
-Text HLabel 4100 4100 0    60   Output ~ 0
+Text HLabel 1350 1450 0    60   Input ~ 0
 SDA
-Text HLabel 4100 4000 0    60   Output ~ 0
+Text HLabel 1350 1350 0    60   Input ~ 0
 SCL
-Text HLabel 7900 3200 2    60   Input ~ 0
+Text HLabel 1600 1500 2    60   Output ~ 0
 INT1
-Text HLabel 7900 3300 2    60   Input ~ 0
+Text HLabel 1600 1600 2    60   Output ~ 0
 INT2
-Text HLabel 7900 3100 2    60   Output ~ 0
+Text HLabel 1600 1400 2    60   Input ~ 0
 FET_CTRL
-$Comp
-L MSP430G2203IPW28 U?
-U 1 1 543E080C
-P 6000 3000
-F 0 "U?" H 6000 3050 60  0000 C CNN
-F 1 "MSP430G2203IPW28" H 6000 1200 60  0000 C CNN
-F 2 "~" H 5950 3000 60  0000 C CNN
-F 3 "~" H 5950 3000 60  0000 C CNN
-	1    6000 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4100 3100 4200 3100
+	1350 1200 1450 1200
 Wire Wire Line
-	4100 4000 4200 4000
+	1350 1350 1450 1350
 Wire Wire Line
-	4100 4100 4200 4100
+	1350 1450 1450 1450
 Wire Wire Line
-	4100 4750 4200 4750
+	1350 1600 1450 1600
 Wire Wire Line
-	7800 3100 7900 3100
+	1500 1400 1600 1400
 Wire Wire Line
-	7800 3200 7900 3200
+	1500 1500 1600 1500
 Wire Wire Line
-	7800 3300 7900 3300
+	1500 1600 1600 1600
 $EndSCHEMATC

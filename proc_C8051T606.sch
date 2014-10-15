@@ -36,9 +36,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 5
 Title ""
-Date "14 oct 2014"
+Date "15 oct 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -71,8 +71,6 @@ Text Notes 5000 3200 0    60   ~ 0
 input
 Text Notes 7350 3250 0    60   ~ 0
 weak pull-up
-NoConn ~ 6750 3350
-NoConn ~ 6750 3450
 NoConn ~ 6750 3550
 NoConn ~ 5150 3400
 Text HLabel 5050 3050 0    60   Input ~ 0
@@ -97,4 +95,22 @@ Wire Wire Line
 	5150 3550 5050 3550
 Wire Wire Line
 	5050 3050 5150 3050
+Text HLabel 6850 3350 2    60   Output ~ 0
+SDA
+Text HLabel 6850 3450 2    60   Output ~ 0
+SCL
+Wire Wire Line
+	6750 3350 6850 3350
+Wire Wire Line
+	6750 3450 6850 3450
+Wire Notes Line
+	7200 3350 7250 3350
+Wire Notes Line
+	7250 3350 7250 3450
+Wire Notes Line
+	7250 3450 7200 3450
+Wire Notes Line
+	7250 3400 7300 3400
+Text Notes 7350 3450 0    60   ~ 0
+I2C Master
 $EndSCHEMATC
