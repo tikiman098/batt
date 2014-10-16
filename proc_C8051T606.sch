@@ -37,10 +37,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
-Title ""
+Title "Battery Board"
 Date "15 oct 2014"
-Rev ""
-Comp ""
+Rev "alpha"
+Comp "APS"
 Comment1 ""
 Comment2 ""
 Comment3 ""
